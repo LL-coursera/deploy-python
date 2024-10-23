@@ -10,8 +10,10 @@ COPY . /app
 # Install necessary packages
 RUN pip3 install --no-cache-dir -r requirements.txt
 
-# Make port 8000 available to the world outside this container
-EXPOSE 8000
+# Set environment variables
+ENV FLASK_APP=app.py
+ENV FLASK_RUN_HOST=0.0.0.0
+ENV FLASK_RUN_PORT=8000
 
-# Run the application using gunicorn
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "app.py"]
+# Command to run the application
+CMD ["flask", "run"]
