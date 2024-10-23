@@ -42,7 +42,7 @@ const sendMessage = async (message) => {
   messagesContainer.appendChild(loadingtextElement);
 
   async function makePostRequest(msg) {
-    const url = 'https://locluu1990-5000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai/chatbot';  // Make a POST request to this url
+    const url = 'https://unacceptable-alikee-llc-ll-0e705753.koyeb.app/chatbot';  // Make a POST request to this url
     const requestBody = {
       prompt: msg
     };
